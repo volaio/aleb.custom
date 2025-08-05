@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  font-family: 'Share Tech Mono', monospace;
+  background: #111;
+  color: #f4f4f4;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://i.ibb.co/mSTy5Wk/moto-background.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;
+  z-index: -1;
+}
+
+.container {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+header h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #ffe100;
+  text-shadow: 1px 1px 5px #000;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #ffe100;
+}
+
+select {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+}
+
+.cotizar-btn {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  background-color: #ffe100;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.cotizar-btn:hover {
+  transform: scale(1.05);
+  background-color: #ffcb00;
+}
+
+.resultado {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #00ffae;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.whatsapp-btn {
+  display: block;
+  margin: 2rem auto 0;
+  text-align: center;
+  background-color: #25d366;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border: 3px solid #fff;
+  width: fit-content;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 10px #25d366;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebe57;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #1ebe57;
+}
+
+.nota {
+  font-size: 0.9rem;
+  text-align: center;
+  color: #bbb;
+  margin-top: 1rem;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+footer a {
+  color: #ffe100;
+  text-decoration: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
