@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cotizador de Pintura para Tanques Custom</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <div class="container">
+    <header>
+      <h1>Cotizador de Pintura para Tanques Custom</h1>
+    </header>
+
+    <div class="form-group">
+      <label for="marca">Marca:</label>
+      <select id="marca">
+        <option value="">Seleccioná marca</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="modelo">Modelo:</label>
+      <select id="modelo" disabled>
+        <option value="">Seleccioná modelo</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="nivel">Nivel de pintura:</label>
+      <select id="nivel">
+        <option value="">Seleccioná nivel</option>
+        <option value="basico">Básico</option>
+        <option value="medio">Medio</option>
+        <option value="premium">Premium</option>
+      </select>
+    </div>
+
+    <button class="cotizar-btn" onclick="cotizar()">Cotizar</button>
+
+    <div id="resultado" class="resultado"></div>
+
+    <a id="whatsapp-link" href="#" target="_blank" class="whatsapp-btn" style="display:none;">
+      Contactar por WhatsApp
+    </a>
+
+    <div class="nota">* Los precios son estimados y pueden variar según el trabajo.</div>
+  </div>
+
+  <footer>
+    <p>© 2025 Aleb.Custom - Estilo y calidad en pintura de tanques</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
