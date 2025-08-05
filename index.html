@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>aleb.custom | Cotizá tu diseño personalizado!</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="overlay"></div>
+  <main class="container">
+    <header>
+      <h1>Cotizá tu diseño personalizado!</h1>
+    </header>
+
+    <section class="cotizador">
+      <div class="form-group">
+        <label for="marca">Marca</label>
+        <select id="marca">
+          <option value="">Seleccioná una marca</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="modelo">Modelo</label>
+        <select id="modelo" disabled>
+          <option value="">Seleccioná un modelo</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="nivel">Nivel de Pintura</label>
+        <select id="nivel">
+          <option value="basico">🎨 Pintura básica (1 color)</option>
+          <option value="medio">🎯 Diseño medio (2 colores o gráficos simples)</option>
+          <option value="personalizado">🔥 Diseño personalizado</option>
+        </select>
+      </div>
+
+      <button class="cotizar-btn" onclick="cotizar()">Calcular Precio</button>
+
+      <div id="resultado" class="resultado"></div>
+
+      <p class="info-extra">¿No encontrás tu modelo? Seleccioná cualquiera y explicanos en WhatsApp 😉</p>
+
+      <a class="whatsapp-btn" href="https://wa.me/5491170315100" target="_blank">
+        Escribinos por WhatsApp
+      </a>
+
+      <footer class="footer">
+        <p>Instagram: <a href="https://instagram.com/aleb.customarg" target="_blank">@aleb.customarg</a></p>
+      </footer>
+    </section>
+  </main>
+</body>
+</html>
